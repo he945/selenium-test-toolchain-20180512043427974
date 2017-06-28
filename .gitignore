@@ -1,0 +1,4 @@
+results.xml
+geckodriver.log
+tests/__pycache__/
+
