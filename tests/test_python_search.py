@@ -16,6 +16,7 @@ class GoogleSearch(unittest.TestCase):
         self.driver.implicitly_wait(15)
         new_elem = self.driver.find_elements_by_class_name("r");
         assert "Wikipedia" in new_elem[0].text
+        print "DONE"
 
 
     def tearDown(self):
