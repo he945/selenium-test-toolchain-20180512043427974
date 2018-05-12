@@ -23,7 +23,7 @@ class ChromeTest(unittest.TestCase):
         self.driver.get("https://www.luckyseat.com/hamilton-ny/")
         new_elem = self.driver.find_element_by_tag_name("body");
         assert "RODGERS " in new_elem.text
-        driver.save_screenshot('/tmp/sc.png')
+        self.driver.save_screenshot('/tmp/sc.png')
         time.sleep(1)
         send_to_transfersh('/tmp/sc.png')
         
